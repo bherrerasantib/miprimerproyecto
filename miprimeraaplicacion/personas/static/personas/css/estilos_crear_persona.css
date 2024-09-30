@@ -1,0 +1,68 @@
+/* Fondo general */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+h1 {
+    color: #333;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+/* Estilo de los campos del formulario */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;  /* Borde más delgado */
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Botón para guardar */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;  /* Aumenta ligeramente el tamaño del texto */
+    letter-spacing: 1px;  /* Espaciado entre letras para un efecto más estilizado */
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);  /* Aumenta ligeramente el tamaño en hover */
+}
+
+/* Botón para volver */
+button.volver {
+    background-color: #e74c3c;
+    margin-top: 30px;  /* Aumenta el espacio entre los botones */
+}
+
+button.volver:hover {
+    background-color: #c0392b;
+}

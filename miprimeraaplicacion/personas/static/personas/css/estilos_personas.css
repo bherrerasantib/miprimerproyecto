@@ -1,0 +1,63 @@
+/* Fondo general */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del título */
+h1 {
+    color: #333;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+/* Botones */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px 0; /* Espacio entre botones */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Botón específico para la lista */
+button.listado {
+    background-color: #f39c12;
+}
+
+button.listado:hover {
+    background-color: #e67e22;
+}
+
+/* Botón específico para volver */
+button.volver {
+    background-color: #e74c3c;
+}
+
+button.volver:hover {
+    background-color: #c0392b;
+}

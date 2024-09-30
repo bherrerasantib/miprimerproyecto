@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Persona</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'personas/css/estilos_crear_persona.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Crear Persona</h1>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Guardar</button>
+        </form>
+        <br><br>
+        <a href="{% url 'personas' %}"><button class="volver">Volver a Personas</button></a>
+    </div>
+</body>
+</html>

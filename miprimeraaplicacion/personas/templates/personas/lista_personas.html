@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Personas</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'personas/css/estilos_listado_personas.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Listado de Personas Registradas</h1>
+
+        <!-- Si hay personas registradas, mostrar la lista -->
+        {% if personas %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for persona in personas %}
+                <tr>
+                    <td>{{ persona.nombre }}</td>
+                    <td>{{ persona.apellido }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <p>No hay personas registradas.</p>
+        {% endif %}
+
+        <a href="{% url 'crear_persona' %}"><button>Crear Nueva Persona</button></a>
+        <br><br>
+        <a href="{% url 'personas' %}"><button class="volver">Volver a Personas</button></a>
+    </div>
+</body>
+</html>

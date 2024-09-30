@@ -1,0 +1,62 @@
+/* Fondo general */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del título */
+h1 {
+    color: #2ecc71; /* Verde para indicar éxito */
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+/* Botón para ver la lista de personas */
+button.listado {
+    background-color: #3498db; /* Azul */
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px 0;
+}
+
+button.listado:hover {
+    background-color: #2980b9; /* Azul más oscuro en hover */
+}
+
+/* Botón para volver a la lista de personas */
+button.volver {
+    background-color: #2ecc71; /* Verde éxito */
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px 0;
+}
+
+button.volver:hover {
+    background-color: #27ae60; /* Verde más oscuro en hover */
+}

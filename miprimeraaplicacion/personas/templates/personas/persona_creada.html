@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persona Creada</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'personas/css/estilos_persona_creada.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Persona creada exitosamente</h1>
+        <a href="{% url 'lista_personas' %}"><button class="listado">Ver la lista de personas</button></a>
+        <br><br>
+        <a href="{% url 'personas' %}"><button class="volver">Volver a Personas</button></a>
+    </div>
+</body>
+</html>

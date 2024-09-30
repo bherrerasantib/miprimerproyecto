@@ -1,0 +1,45 @@
+/* Estilos generales */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;  /* Centrar el contenido horizontalmente */
+    align-items: center;      /* Centrar el contenido verticalmente */
+    height: 100vh;            /* Ocupa el 100% de la altura de la pantalla */
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;  /* Centra el texto */
+    background-color: white;
+    padding: 50px;       /* Espaciado interno para darle espacio al contenido */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+}
+
+/* Título */
+h1 {
+    font-size: 48px;          /* Tamaño grande para el título */
+    color: #333;              /* Color gris oscuro */
+    margin-bottom: 20px;      /* Espaciado debajo del título */
+}
+
+/* Estilo del botón */
+button {
+    background-color: #3498db; /* Azul para el botón */
+    color: white;              /* Texto blanco */
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase; /* Texto en mayúsculas para dar impacto */
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05); /* Crecer ligeramente al pasar el cursor */
+}
