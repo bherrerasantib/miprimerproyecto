@@ -1,3 +1,4 @@
+# Requiere Python 3.9.16
 asgiref==3.8.1
 Django==3.2
 pytz==2024.2
